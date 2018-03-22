@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/community/community",
+    "pages/index/index",        
+    "pages/logs/logs",
+    "pages/community/newPostListPage/newPostListPage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WTF",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/community/community",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我"
+      }
+    ]
+  },
+  "debug":true
+
+}
