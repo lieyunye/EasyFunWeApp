@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+        "x-scroll-view": "/libs/xing-components/x-scroll-view"
+  }
 }

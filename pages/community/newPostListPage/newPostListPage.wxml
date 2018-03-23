@@ -1,2 +1,7 @@
 <view class="new">
+  <x-scroll-view class="list" scroll-y="{{true}}">
+   <block wx:for="{{list}}" wx:key="*this">
+    <view class="item">{{item}}</view>
+  </block> 
+  </x-scroll-view>
 </view>
