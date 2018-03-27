@@ -1,0 +1,25 @@
+.item {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  color: #888888;
+  font-size: 58rpx;
+  height: 500rpx;
+  background-color: #ffff00;
+
+}
+
+.userInfo {
+  height: 20%;
+}
+
+.content {
+  height: 30%;
+  background-color: #ddd0ff;
+}
+
+.attach {
+  height: 50%;
+  width: 100%;
+  background-color: #1f11ff;
+}

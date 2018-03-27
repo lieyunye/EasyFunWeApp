@@ -1,0 +1,7 @@
+<view class="item">
+  <view class="userInfo">name</view>
+  <view class="content">contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</view>
+  <view class="attach">
+    <MediaDisplayView></MediaDisplayView>
+  </view>
+</view>

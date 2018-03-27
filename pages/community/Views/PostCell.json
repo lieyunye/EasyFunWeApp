@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+      "MediaDisplayView": "/pages/community/Views/MediaDisplayView"
+  }
+}

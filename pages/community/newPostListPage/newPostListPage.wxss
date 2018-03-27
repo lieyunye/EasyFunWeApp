@@ -25,3 +25,23 @@
   border-radius: 4rpx;
   overflow: hidden;
 }
+.space-right{
+  width: 50rpx;
+  height: 100%;
+  position: fixed;
+  right:0rpx;
+  top:0rpx;  
+  background-color: #f11fff;
+  opacity:0;
+
+} 
+ .space-left{
+  width: 50rpx;
+  height: 100%;
+  position: fixed;
+  left:0rpx;
+  top:0rpx;  
+  background-color: #f11fff;
+  opacity:0;
+
+} 

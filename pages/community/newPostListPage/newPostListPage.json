@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-        "x-scroll-view": "/libs/xing-components/x-scroll-view"
+        "x-scroll-view": "/libs/xing-components/x-scroll-view",
+        "PostCell": "/pages/community/Views/PostCell"
   }
 }
