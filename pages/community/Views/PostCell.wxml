@@ -1,6 +1,6 @@
 <view class="item">
-  <view class="userInfo">name</view>
-  <view class="content">contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</view>
+  <view class="userInfo">{{post.creatorDetail.userNick}}</view>
+  <view class="content">{{post.content}}</view>
   <view class="attach">
     <MediaDisplayView></MediaDisplayView>
   </view>
