@@ -1,0 +1,11 @@
+<view class="new">
+  <x-scroll-view class="list" scroll-y="{{true}}">
+   <block wx:for="{{list}}" wx:key="*this">
+     <post_cell post="{{item}}">
+    </post_cell>  
+    <!-- <view class='item'>{{item.content}}</view> -->
+  </block> 
+  </x-scroll-view>
+  <view class="space-left"></view> 
+  <view class="space-right"></view>  
+</view>

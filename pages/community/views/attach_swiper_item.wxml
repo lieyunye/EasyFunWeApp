@@ -1,0 +1,16 @@
+<view class="containner">
+  <template is="{{templateName}}" data="{{item}}"/>
+</view>
+
+<template name="image">
+  <view class="containner">
+    <image class="image" src="{{item.url}}" mode="aspectFit" ></image>
+  </view>
+</template>
+
+<template name="video">
+  <view class="containner">
+    <image class="image" src="{{item.attachCover.url}}" mode="aspectFit" ></image>
+  </view>
+</template>
+

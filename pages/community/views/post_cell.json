@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+      "media_display_view": "/pages/community/views/media_display_view",
+      "post_cell_bottom": "/pages/community/views/post_cell_bottom"
+    }
+}

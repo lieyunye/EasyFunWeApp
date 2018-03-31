@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+          "attach_swiper_item": "/pages/community/views/attach_swiper_item"
+  }
+}
