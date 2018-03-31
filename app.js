@@ -10,6 +10,27 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log("res code " + res.code)
+        // if (res.code) {
+        //   //发起网络请求
+        //   wx.request({
+        //     url: 'https://api.weixin.qq.com/sns/jscode2session',
+        //     data: {
+        //       js_code: res.code,
+        //       appid: 'wx284c4cd6b6eaa83b',
+        //       secret:'0151a6b458214f6d26570b4410830283',
+        //       grant_type:'authorization_code'
+        //     },
+        //     success: function (res) {
+        //       console.log(res.data)
+        //     },
+        //     fail: function ({ errMsg }) {
+        //       console.log('request fail', errMsg)
+        //     }
+        //   })
+        // } else {
+        //   console.log('登录失败！' + res.errMsg)
+        // }
       }
     })
     // 获取用户信息

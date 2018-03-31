@@ -19,7 +19,7 @@ Component({
       value: {},
       observer: function (newVal, oldVal) {
         if(newVal){
-          console.log('_post ready ' + oldVal + newVal.creatorDetail.userNick)
+          // console.log('_post ready ' + oldVal + newVal.creatorDetail.userNick)
           this.attachHeight(newVal)
         }
        }
@@ -33,7 +33,7 @@ Component({
   methods: {
     attachHeight:function(val){
 
-      console.log('_post ready ' + val.creatorDetail.userNick)
+      // console.log('_post ready ' + val.creatorDetail.userNick)
       var height=0
       var ratio=0
       var noteAttaches=val.noteAttaches

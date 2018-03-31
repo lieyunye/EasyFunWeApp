@@ -1,6 +1,6 @@
 Component({
   ready() {
-    console.log('attach_item_view ready')
+    // console.log('attach_item_view ready')
 
   },
   properties: {
@@ -8,7 +8,7 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) {
-        console.log('list ready ' + newVal)
+        // console.log('list ready ' + newVal)
         this.configTemplateNmae(newVal)
       }
     },
@@ -26,7 +26,7 @@ Component({
           templateName='video'
         default:
       }
-      console.log('templateName ' + templateName)
+      // console.log('templateName ' + templateName)
       this.setData({
         templateName: templateName
       }

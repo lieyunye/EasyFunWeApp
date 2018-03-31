@@ -4,13 +4,17 @@
 
 <template name="image">
   <view class="containner">
+       <image class="blur_image"src="{{item.url + '?x-oss-process=image/resize,m_fill,w_375,h_375/blur,r_24,s_20'}}" mode="aspectFill"></image>
     <image class="image" src="{{item.url}}" mode="aspectFit" ></image>
   </view>
 </template>
 
 <template name="video">
   <view class="containner">
-    <image class="image" src="{{item.attachCover.url}}" mode="aspectFit" ></image>
+     <image class="blur_image"src="{{item.attachCover.url + '?x-oss-process=image/resize,m_fill,w_375,h_375/blur,r_24,s_20'}}" mode="aspectFill"></image>
+     <image class="image" src="{{item.attachCover.url}}" mode="aspectFit" ></image> 
+     <image class="video_icon" src="/images/ic_playvideo.png" ></image> 
+    <!-- <video class="video" src="https://video.yishihui.com/ysh/video/zone/formal/noteAttach/2018-03-28/noteId_34953/iOS_attach_1522235560975_2.mp4"></video> -->
   </view>
 </template>
 

@@ -1,10 +1,10 @@
 Component({
   ready() {
-    console.log('mediaDisplayView ready')
+    // console.log('mediaDisplayView ready')
 
   },
   data: {
-    indicatorDots: true,
+    indicatorDots: false,
     vertical: false,
   },
   properties: {
@@ -12,14 +12,14 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) {
-        console.log('list ready ' + newVal[0].url + newVal)
+        // console.log('list ready ' + newVal[0].url + newVal)
       }
     }, 
     attachHeight:{
       type: Number,
       value: 0,
       observer: function (newVal, oldVal) {
-        console.log('attachHeight ready ' + newVal)
+        // console.log('attachHeight ready ' + newVal)
       }
     },
     window_width: {

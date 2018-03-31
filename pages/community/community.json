@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "hot_post_list_page": "/pages/community/hot_post_list_page/hot_post_list_page",
     "new_post_list_page": "/pages/community/new_post_list_page/new_post_list_page"
   }
 }

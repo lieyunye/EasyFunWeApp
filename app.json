@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WTF",
+    "navigationBarTitleText": "轻趣",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -19,7 +19,7 @@
     "list": [
       {
         "pagePath": "pages/community/community",
-        "text": "组件"
+        "text": "趣玩"
       },
       {
         "pagePath": "pages/index/index",
