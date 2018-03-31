@@ -1,9 +1,0 @@
-<view class="containner">
-        <swiper class="swiper" indicator-dots="{{indicatorDots}}" style="height:{{attachHeight}}px;max-height:{{window_width}}px;min-height:{{min_height}}px;">
-         <block wx:for="{{list}}" wx:key="*this">
-            <swiper-item class="swiper-item">
-                <image class="image" src="{{item.url}}" mode="aspectFit" ></image>
-            </swiper-item>  
-        </block> 
-      </swiper>
-</view>

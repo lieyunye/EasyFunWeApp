@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "newPostListPage": "/pages/community/newPostListPage/newPostListPage"
+    "new_post_list_page": "/pages/community/new_post_list_page/new_post_list_page"
   }
 }

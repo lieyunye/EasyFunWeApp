@@ -2,7 +2,7 @@
         <swiper class="swiper" indicator-dots="{{indicatorDots}}">
           <swiper-item>
             <view class="swiper-item demo-text-1">
-              <newPostListPage ></newPostListPage>
+              <new_post_list_page ></new_post_list_page>
             </view>
           </swiper-item>
           <swiper-item>

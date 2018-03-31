@@ -3,7 +3,7 @@
     "pages/community/community",
     "pages/index/index",        
     "pages/logs/logs",
-    "pages/community/newPostListPage/newPostListPage"
+    "pages/community/new_post_list_page/new_post_list_page"
   ],
   "window":{
     "backgroundTextStyle":"light",
