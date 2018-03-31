@@ -1,25 +1,61 @@
 .item {
-  margin-left: 20rpx;
-  margin-right: 20rpx;
   margin-bottom: 20rpx;
   color: #888888;
   font-size: 58rpx;
-  height: 500rpx;
-  background-color: #ffff00;
+  background-color: #ffffff;
 
 }
 
 .userInfo {
   height: 20%;
+  display: flex;
+	align-items: center;
+  background-color: #ffffff;
+
+}
+
+.userInfo image {
+  margin-left: 20rpx;
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+}
+
+.userInfo_right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  margin: 10rpx 10rpx;
+}
+
+.username {
+  font-size: 12px;
+  color: #333333;
+}
+.time {
+  font-size: 10px;
+  color: #cccccc;
 }
 
 .content {
-  height: 30%;
-  background-color: #ddd0ff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 15px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .attach {
-  height: 50%;
   width: 100%;
   background-color: #1f11ff;
+
+
 }
+

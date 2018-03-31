@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-      "MediaDisplayView": "/pages/community/Views/MediaDisplayView"
-  }
+      "MediaDisplayView": "/pages/community/Views/MediaDisplayView",
+      "post_cell_bottom": "/pages/community/Views/post_cell_bottom"
+    }
 }

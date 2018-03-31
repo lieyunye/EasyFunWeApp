@@ -18,7 +18,8 @@ Component({
         
         url: require('../../../url-config').getHotNoteList,
         data: {
-          num: 10,
+          pageNo: 0,
+          pageSize:10,
           y: ''
         },
         success:function(result){

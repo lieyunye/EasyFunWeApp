@@ -32,8 +32,24 @@ App({
         }
       }
     })
+
+    wx.getSystemInfo({
+      success: res => {
+        this.globalData.screenWidth = res.windowWidth
+        this.globalData.screeHeight = res.windowHeight
+      }
+      // success: function (res) {
+      //   console.log("res " + this.globalData.userInfo);
+      //   this.globalData.screenWidth = res.windowWidth
+      //   this.globalData.screeHeight = res.windowHeight
+      //   console.log("res " + res.windowWidth);
+      //   // console.log(winheight);
+      // }
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    screenWidth:0,
+    screeHeight:0
   }
 })

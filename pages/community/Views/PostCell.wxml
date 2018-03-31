@@ -1,7 +1,14 @@
 <view class="item">
-  <view class="userInfo">{{post.creatorDetail.userNick}}</view>
+  <view class="userInfo">
+    <image src="{{post.creatorDetail.userIcon}}"></image>
+    <view class="userInfo_right">
+      <text class="username">{{post.creatorDetail.userNick}}</text> 
+      <text class="time">{{post.gmtCreateStr}}</text> 
+    </view>
+  </view>
   <view class="content">{{post.content}}</view>
-  <view class="attach">
-    <MediaDisplayView></MediaDisplayView>
+  <view class="attach" wx:if="{{post.noteAttaches.length > 0}}">
+    <MediaDisplayView list="{{post.noteAttaches}}" attachHeight="{{attach_height}}"></MediaDisplayView>
+    <post_cell_bottom></post_cell_bottom>
   </view>
 </view>
