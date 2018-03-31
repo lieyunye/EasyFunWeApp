@@ -1,0 +1,5 @@
+.post_cell_bottom
+{
+  background-color: #ff00ff;
+  height: 50rpx;
+}
