@@ -1,4 +1,14 @@
+<import src="../../templates/image_button"/>
+
 <view class="post_cell_bottom">
-
-
+    <view class="left">
+    <template is="image_button" data="{{...share}}"/> 
+    <template is="image_button" data="{{...comment}}"/>
+    </view>
+    <view class="up_down">
+      <image class="up_image" src="/images/ic_community_thumbup.png"></image>
+      <text class="up_down_text">{{upDownCount}}</text>
+      <image class="down_image" src="/images/ic_community_stepon.png"></image>
+    </view>
 </view>
+

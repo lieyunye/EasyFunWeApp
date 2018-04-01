@@ -1,0 +1,6 @@
+ <template name="image_button"> 
+  <view class="image_button" >
+   <image class="{{class}}" src="{{name}}" ></image> 
+    <text class="text" wx:if="{{text.length > 0}}">{{text}}</text>
+  </view>
+ </template> 

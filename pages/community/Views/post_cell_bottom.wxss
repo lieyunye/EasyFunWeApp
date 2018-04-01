@@ -1,5 +1,71 @@
 .post_cell_bottom
 {
-  background-color: #ff00ff;
-  height: 0rpx;
+  width: 100%;
+  height:100%;
+  margin-top: 24rpx;
+  margin-bottom:24rpx;
+  display: flex;
+}
+
+.left
+{
+  width: 100%;
+  height:100%;
+  display: flex;
+
+}
+
+.up_down
+{
+  display: flex;
+  margin-right: 24rpx;
+  top: 0rpx;
+
+}
+
+.up_image
+{
+   margin-right: 16rpx; 
+  height: 38rpx;
+    width: 38rpx;
+
+}
+
+.down_image
+{
+    margin-left: 16rpx;
+    height: 38rpx;
+    width: 38rpx;
+}
+
+.up_down_text
+{
+  text-align: center;
+  color: #333333;
+  font-size: 14px;
+
+}
+
+/* 以下css作用于template image_button 没搞明白*/
+.image_button
+{
+  justify-content: left;
+  margin-left: 24rpx;
+  display: flex;
+	align-items: center;
+}
+
+.share
+{
+    /* background-color: #0000ff; */
+    height: 38rpx;
+    width: 38rpx;
+}
+
+.text
+{
+  margin-left: 16rpx;
+  color: #333333;
+  font-size: 14px;
+
 }

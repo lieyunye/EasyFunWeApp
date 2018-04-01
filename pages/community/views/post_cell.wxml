@@ -9,6 +9,6 @@
   <view class="content" wx:if="{{post.content.length > 0}}">{{post.content}}</view>
   <view class="attach" wx:if="{{post.noteAttaches.length > 0}}">
     <media_display_view list="{{post.noteAttaches}}" attachHeight="{{attach_height}}"></media_display_view>
-    <post_cell_bottom></post_cell_bottom>
   </view>
+    <post_cell_bottom post="{{post}}"></post_cell_bottom>
 </view>
