@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "post_cell": "/pages/community/views/post_cell",
+    "comment_cell": "/pages/community/views/comment_cell"
+  }
+}

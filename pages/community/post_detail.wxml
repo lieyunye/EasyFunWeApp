@@ -1,0 +1,8 @@
+<post_cell post="{{post}}">
+</post_cell>
+ <block wx:for="{{comment_list}}" wx:key="*this" wx:if="{{comment_list.length > 0}}">
+     <!-- <navigator url="../community/post_detail?postID={{item.id}}" hover-class="none"> -->
+     <comment_cell comment="{{item}}">
+    </comment_cell>  
+    <!-- </navigator> -->
+</block> 

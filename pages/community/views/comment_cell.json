@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "media_display_view": "/pages/community/views/media_display_view"
+  }
+}

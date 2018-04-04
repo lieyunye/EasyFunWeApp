@@ -1,8 +1,10 @@
 <view class="new">
   <x-scroll-view class="list" scroll-y="{{true}}" refreshing="{{refreshing}}" nomore="{{nomore}}" bindpulldownrefresh="_onPullDownRefresh">
    <block wx:for="{{list}}" wx:key="*this">
+    <navigator url="../community/post_detail?postID={{item.id}}" hover-class="none">
      <post_cell post="{{item}}">
     </post_cell>  
+    </navigator>
   </block> 
   </x-scroll-view>
   <view class="space-left"></view> 

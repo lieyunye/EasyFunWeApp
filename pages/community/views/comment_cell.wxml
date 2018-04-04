@@ -1,0 +1,18 @@
+<!--pages/community/views/comment_cell.wxml-->
+<view class="item">
+  <view class="userInfo">
+    <image class="avatar" src="{{comment.creatorDetail.userIcon}}"></image>
+    <view class="userInfo_right">
+      <view class="name_up_down">
+        <text class="username">{{comment.creatorDetail.userNick}}</text>
+        <view class="comment_up_down">
+          <image class="comment_up_image" src="/images/ic_community_smallthumbup.png"></image>
+          <text class="comment_up_down_text">{{upDownCount}}</text>
+          <image class="comment_down_image" src="/images/ic_community_smallstepon.png"></image>
+        </view>
+      </view>
+      <text class="time">{{comment.gmtCreateStr}}</text>
+    </view>
+
+  </view>
+</view>

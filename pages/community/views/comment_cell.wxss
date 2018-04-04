@@ -1,0 +1,65 @@
+.item {
+  margin-bottom: 20rpx;
+  width: 100%;
+  display: flex;
+}
+
+.userInfo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.avatar {
+  margin-left: 20rpx;
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%; 
+}
+
+.userInfo_right {
+  display: flex;
+  width: 90%;/* 不知道为啥么要设置为90%，否则头像会被挤压 */
+  flex-direction: column;
+  margin-left: 20rpx; 
+}
+
+.name_up_down {
+  display: flex;
+  width: 100%;
+}
+
+.username {
+  font-size: 12px;
+  width: 100%;
+  color: #ffa82f;
+}
+
+.time {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.comment_up_down {
+  display: flex;
+  margin-right: 24rpx;
+  align-items: center;
+}
+
+.comment_up_image {
+  margin-right: 16rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.comment_down_image {
+  margin-left: 16rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.comment_up_down_text {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
