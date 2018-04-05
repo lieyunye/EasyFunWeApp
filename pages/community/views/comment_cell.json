@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "media_display_view": "/pages/community/views/media_display_view"
+    "media_display_view": "/pages/community/views/media_display_view",
+    "voice_button": "/pages/templates/voice_button"
   }
 }

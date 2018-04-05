@@ -1,3 +1,4 @@
+
 Component({
   ready() {
 
@@ -15,10 +16,8 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) {
-        
-        console.log('_post ready')
         if (newVal) {
-          // console.log('_post ready ' + oldVal + newVal.creatorDetail.userNick)
+          this.configVoice(newVal)
           this.attachHeight(newVal)
           if (newVal.noteThreadDynamic) {
             console.log('list observer ready ' + newVal.noteThreadDynamic.replyCount)
@@ -45,14 +44,13 @@ Component({
       value: {},
       observer: function (newVal, oldVal){
         this.setData({
-          voiceAnimation: { 'animation_play_state': 0, 'text': '' }
         })
       }
     },
-    voiceAnimation:
+    voiceData:
     {
       type:Object,
-      value: {'animation_play_state':1,'text':'12"'}
+      value: null
     }
     
 
@@ -85,6 +83,19 @@ Component({
         attach_height: height
       }
       )
+    },
+    configVoice:function(val){
+      var noteAttaches = val.noteAttaches
+      for (var i = 0, len = noteAttaches.length; i < len; i++) {
+        var item = noteAttaches[i]
+        if(item.fileType == 3){
+          console.log(item.fileType)
+          this.setData({
+            voiceData:item
+          })
+          break;
+        }
+      }
     }
   }
 

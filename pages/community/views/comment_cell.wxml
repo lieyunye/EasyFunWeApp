@@ -22,10 +22,10 @@
   <!--评论文字  -->
   <view wx:if="{{comment.content.length > 0}}" class="content">{{comment.content}} </view>
   <!--评论语音  -->
-  <view wx:if="{{voice != null}}" class="voice">
-    <template is="voice_button" data="{{...voiceAnimation}}">
+  <view wx:if="{{voiceData != null}}" class="voice">
+    <voice_button voiceData="{{voiceData}}">
 
-    </template>
+    </voice_button>
 
   </view>
 </view>

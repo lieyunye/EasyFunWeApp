@@ -1,5 +1,5 @@
 
-@import "../../templates/voice_button.wxss";
+/* @import "../../templates/voice_button.wxss"; */
 
 .item {
   margin-bottom: 20rpx;
