@@ -1,4 +1,7 @@
 <!--pages/community/views/comment_cell.wxml-->
+<import src="../../templates/voice_button" />
+
+
 <view class="item">
   <view class="userInfo">
     <image class="avatar" src="{{comment.creatorDetail.userIcon}}"></image>
@@ -13,6 +16,16 @@
       </view>
       <text class="time">{{comment.gmtCreateStr}}</text>
     </view>
+  </view>
+</view>
+<view>
+  <!--评论文字  -->
+  <view wx:if="{{comment.content.length > 0}}" class="content">{{comment.content}} </view>
+  <!--评论语音  -->
+  <view wx:if="{{voice != null}}" class="voice">
+    <template is="voice_button" data="{{...voiceAnimation}}">
+
+    </template>
 
   </view>
 </view>

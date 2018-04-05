@@ -1,3 +1,5 @@
+@import "../../templates/image_button.wxss";
+
 .post_cell_bottom
 {
   width: 100%;
@@ -41,30 +43,6 @@
 .up_down_text
 {
   text-align: center;
-  color: #333333;
-  font-size: 14px;
-
-}
-
-/* 以下css作用于template image_button 没搞明白*/
-.image_button
-{
-  justify-content: left;
-  margin-left: 24rpx;
-  display: flex;
-	align-items: center;
-}
-
-.share
-{
-    /* background-color: #0000ff; */
-    height: 38rpx;
-    width: 38rpx;
-}
-
-.text
-{
-  margin-left: 16rpx;
   color: #333333;
   font-size: 14px;
 

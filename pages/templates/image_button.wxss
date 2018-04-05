@@ -1,0 +1,22 @@
+.image_button
+{
+  justify-content: left;
+  margin-left: 24rpx;
+  display: flex;
+	align-items: center;
+}
+
+.share
+{
+    /* background-color: #0000ff; */
+    height: 38rpx;
+    width: 38rpx;
+}
+
+.text
+{
+  margin-left: 16rpx;
+  color: #333333;
+  font-size: 14px;
+
+}

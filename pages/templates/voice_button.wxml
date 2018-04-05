@@ -1,0 +1,9 @@
+<template name="voice_button">
+  <view class="voice_button">
+    <view class="voice_button_left">
+    <view class="voice_animation" style="animation-play-state:{{animation_play_state == 1?'running':'paused'}}">
+    </view>
+    </view>
+    <text class="voice_text" wx:if="{{text.length > 0}}">{{text}}</text>
+  </view>
+</template>

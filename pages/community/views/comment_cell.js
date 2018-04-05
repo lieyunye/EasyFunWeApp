@@ -15,6 +15,8 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) {
+        
+        console.log('_post ready')
         if (newVal) {
           // console.log('_post ready ' + oldVal + newVal.creatorDetail.userNick)
           this.attachHeight(newVal)
@@ -22,7 +24,8 @@ Component({
             console.log('list observer ready ' + newVal.noteThreadDynamic.replyCount)
             var upDownCount = (newVal.noteThreadDynamic.praiseCount - newVal.noteThreadDynamic.treadCount)
             this.setData({
-              upDownCount: upDownCount == 0 ? '' : upDownCount + ''
+              upDownCount: upDownCount == 0 ? '' : upDownCount + '',
+              // animation_play_state:'paused'
             })
           }
         }
@@ -36,6 +39,22 @@ Component({
       type: String,
       value: 0
     }
+    ,
+    voice: {
+      type: Object,
+      value: {},
+      observer: function (newVal, oldVal){
+        this.setData({
+          voiceAnimation: { 'animation_play_state': 0, 'text': '' }
+        })
+      }
+    },
+    voiceAnimation:
+    {
+      type:Object,
+      value: {'animation_play_state':1,'text':'12"'}
+    }
+    
 
   },
   methods: {

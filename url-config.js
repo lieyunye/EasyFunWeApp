@@ -6,8 +6,8 @@ var config = {
   online_host,
 
   getHotNoteList: `${online_host}/zone/notepub/getHotNoteList.htmls`,
-  getNewNoteList: `${online_host}/zone/notepub/getNewNoteList.htmls`,
-  getNoteByNoteId: `${online_host}/zone/notepub/getNoteByNoteId.htmls`,
+  getNewNoteList: `${dev_host}/zone/notepub/getNewNoteList.htmls`,
+  getNoteByNoteId: `${dev_host}/zone/notepub/getNoteByNoteId.htmls`,
 
   // 测试的请求地址，用于测试会话
   requestUrl: `https://${online_host}/testRequest`,

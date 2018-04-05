@@ -1,3 +1,6 @@
+
+@import "../../templates/voice_button.wxss";
+
 .item {
   margin-bottom: 20rpx;
   width: 100%;
@@ -11,7 +14,7 @@
 }
 
 .avatar {
-  margin-left: 20rpx;
+  margin-left: 24rpx;
   height: 70rpx;
   width: 70rpx;
   border-radius: 50%; 
@@ -22,6 +25,7 @@
   width: 90%;/* 不知道为啥么要设置为90%，否则头像会被挤压 */
   flex-direction: column;
   margin-left: 20rpx; 
+    /* background-color: #f00fff; */
 }
 
 .name_up_down {
@@ -63,3 +67,65 @@
   color: #333;
   font-size: 14px;
 }
+
+/* 评论文字 */
+.content {
+  margin-left: 110rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  /* background-color: #f00fff; */
+  color: #333333;
+  font-size: 15px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.voice
+{
+  background-color: #ffa82f; 
+  margin-left: 110rpx;
+  width: 200rpx;
+  height: 60rpx;
+  border-radius:30rpx;
+}
+
+/* .voice_button
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.voice_button_left
+{
+  width: 100%;
+}
+
+.voice_animation
+{
+  margin-left: 30rpx;
+  background: url(https://rescdn.yishihui.com/ysh/pic/users/userid_6437/head/head_1518187267778.jpg);
+  width: 28rpx;
+  height: 28rpx;
+  animation: playAudioWhite 2s infinite;
+}
+
+@keyframes playAudioWhite {
+  100%   { background: url(https://rescdn.yishihui.com/ysh/pic/users/userid_6437/head/head_1518187267778.jpg); }
+  100%  { background: url(https://rescdn.yishihui.com/ysh/pic/users/userid_3/head/head_1492053696260.jpg); }
+  100% { background: url(https://rescdn.yishihui.com/ysh/pic/users/userid_12457/head/head_1511856610061.jpeg); }
+}
+
+.voice_text
+{
+  text-align: center;
+  margin-right:30rpx; 
+  color: #ffffff;
+  font-size: 14px;
+
+} */
