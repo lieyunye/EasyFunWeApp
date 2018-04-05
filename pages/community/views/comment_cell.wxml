@@ -24,8 +24,10 @@
   <!--评论语音  -->
   <view wx:if="{{voiceData != null}}" class="voice">
     <voice_button voiceData="{{voiceData}}">
-
     </voice_button>
-
+  </view>
+  <!--附件  -->
+  <view class="attach" wx:if="{{attach_height > 0}}">
+    <media_display_view list="{{comment.noteAttaches}}" attachHeight="{{attach_height}}"></media_display_view>
   </view>
 </view>

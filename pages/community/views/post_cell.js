@@ -42,13 +42,16 @@ Component({
         var itemW=item.width
         var itemH=item.height
         var newRatio=itemH/itemW
+        var width = getApp().globalData.screenWidth;
         if (newRatio > 1){
-          height = getApp().globalData.screenWidth
+          height = width
           break
         } else if (newRatio < 1 / 3.0){
-          height = getApp().globalData.screenWidth / 3.0;
+          if (width / 3.0 > height) {
+            height = width / 3.0;
+          }
         }else {
-          ratio = getApp().globalData.screenWidth / itemW
+          ratio = width / itemW
           if(itemH * ratio > height){
             height = itemH * ratio
           }
