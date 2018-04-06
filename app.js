@@ -58,6 +58,9 @@ App({
       success: res => {
         this.globalData.screenWidth = res.windowWidth
         this.globalData.screeHeight = res.windowHeight
+        console.log('windowWidth ==> ' + res.windowWidth)
+        console.log('windowHeight ==> ' + res.windowHeight)
+
       }
       // success: function (res) {
       //   console.log("res " + this.globalData.userInfo);

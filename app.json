@@ -5,7 +5,7 @@
     "pages/logs/logs",
     "pages/community/new_post_list_page/new_post_list_page",
     "pages/community/post_detail",
-    "pages/community/views/comment_reply_cell"
+    "pages/community/comment_detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

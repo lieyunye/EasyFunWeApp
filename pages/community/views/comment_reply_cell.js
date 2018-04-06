@@ -8,9 +8,9 @@ Component({
   
   },
   properties: {
-    comments: {
-      type: Array,
-      value: [],
+    item: {
+      type: String,
+      value: '',
       
     }
   }

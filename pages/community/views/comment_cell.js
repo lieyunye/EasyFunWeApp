@@ -61,7 +61,6 @@ Component({
 
     configUpDown: function (newVal) {
       if (newVal.noteThreadDynamic) {
-        console.log('list observer ready ' + newVal.noteThreadDynamic.replyCount)
         var upDownCount = (newVal.noteThreadDynamic.praiseCount - newVal.noteThreadDynamic.treadCount)
         this.setData({
           upDownCount: upDownCount == 0 ? '' : upDownCount + '',
@@ -71,13 +70,11 @@ Component({
 
     attachHeight: function (val) {
 
-      // console.log('_post ready ' + val.creatorDetail.userNick)
       var height = 0
       var ratio = 0
       var noteAttaches = val.noteAttaches
       for (var i = 0, len = noteAttaches.length; i < len; i++) {
         var item = noteAttaches[i]
-        console.log(i)
         if (item.fileType != 3) {
           this.data.attachs.push(item)
         }
@@ -88,7 +85,8 @@ Component({
           var itemW = item.width
           var itemH = item.height
           var newRatio = itemH / itemW
-          var width = getApp().globalData.screenWidth - 72 - 12
+          var width = getApp().globalData.screenWidth - 57 - 12
+          console.log('width +++++++' + width)
           if (newRatio > 1) {
             height = width
             break
@@ -108,67 +106,70 @@ Component({
         attach_height: height
       }
       )
-      console.log(height)
     },
     configVoice: function (val) {
       var noteAttaches = val.noteAttaches
-      for (var i = 0, len = noteAttaches.length; i < len; i++) {
-        var item = noteAttaches[i]
-        if (item.fileType == 3) {
-          console.log(item.fileType)
-          this.setData({
-            voiceData: item
-          })
-          break;
+      if (noteAttaches){
+        for (var i = 0, len = noteAttaches.length; i < len; i++) {
+          var item = noteAttaches[i]
+          if (item.fileType == 3) {
+            console.log(item.fileType)
+            this.setData({
+              voiceData: item
+            })
+            break;
+          }
         }
       }
+      
     },
     configComments:function(val){
       var tempComments = []
       var comments = val.comments
+      if (comments){
+        for (var i = 0, len = comments.length; i < len; i++) {
+          var item = comments[i]
 
-      for (var i = 0, len = comments.length; i < len; i++) {
-        var item = comments[i]
-        console.log('sss' + item.content + len)
-
-        var nickString = ''
-        if (item.commentedUserDetail){
-          nickString = item.creatorDetail.userNick + ' 回复 ' + item.commentedUserDetail.userNick
-        } else {
-          nickString = item.creatorDetail.userNick
-        }
-        var contentString = ' :'
-        if (item.content.length > 0){
-          contentString = contentString + ' ' + item.content
-        }
-        var attachStr = ''
-        if (this.voiceData != null){
-          attachStr = ' [语音] '
-        }
-
-        for (var j = 0, len2 = item.noteAttaches.length; j < len2; j++) {
-          var item = item.noteAttaches[j]
-          var attachType = ''
-          if (item.fileType == 1){
-             attachType = ' [图片] '
-          } else if (item.fileType == 5){
-             attachType = ' [GIF] '
-          } else if(item.fileType == 2){
-             attachType = ' [视频] '
+          var nickString = ''
+          if (item.commentedUserDetail) {
+            nickString = item.creatorDetail.userNick + ' 回复 ' + item.commentedUserDetail.userNick
+          } else {
+            nickString = item.creatorDetail.userNick
           }
-          if (attachType.length > 0){
-             attachStr = attachStr + attachType
+          var contentString = ' :'
+          if (item.content.length > 0) {
+            contentString = contentString + ' ' + item.content
           }
+          var attachStr = ''
+          if (this.voiceData != null) {
+            attachStr = ' [语音] '
+          }
+
+          for (var j = 0, len2 = item.noteAttaches.length; j < len2; j++) {
+            var item = item.noteAttaches[j]
+            var attachType = ''
+            if (item.fileType == 1) {
+              attachType = ' [图片] '
+            } else if (item.fileType == 5) {
+              attachType = ' [GIF] '
+            } else if (item.fileType == 2) {
+              attachType = ' [视频] '
+            }
+            if (attachType.length > 0) {
+              attachStr = attachStr + attachType
+            }
+          }
+          if (attachStr.length > 0) {
+            contentString = contentString + attachStr
+          }
+          var wholeReplyText = nickString + contentString
+          tempComments.push(wholeReplyText)
         }
-        if (attachStr.length > 0) {
-          contentString = contentString + attachStr
-        }
-        var wholeReplyText = nickString + contentString
-        tempComments.push(wholeReplyText)
+        this.setData({
+          comments: tempComments
+        })
       }
-      this.setData({
-        comments: tempComments
-      })
+      
 
     }
   }

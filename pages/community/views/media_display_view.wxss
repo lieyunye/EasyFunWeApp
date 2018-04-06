@@ -6,7 +6,7 @@
 }
 
 .swiper{
-  width: 100%; 
+  width: inherit; 
    /* height: 100%;  */
   display:flex;
   align-items:center;

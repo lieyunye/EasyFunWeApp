@@ -1,11 +1,11 @@
 Page({
   data: {
     post:{},
-    comment_list: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    comment_list: []
 
   },
   onReady() {
-    console.log('community onReady')
+    wx.setNavigationBarTitle({ title: ' 帖子详情' })
 
   },
   onLoad:function(params) {
@@ -37,11 +37,11 @@ Page({
       },
       complete: function () {
         console.log('request complete')
-        self.setData({
-          refreshing: false,
-        });
       }
 
     })
+  },
+  onReachBottom: function () {
+    console.log('onReachBottom')
   },
 })

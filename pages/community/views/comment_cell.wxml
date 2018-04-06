@@ -29,9 +29,16 @@
     <media_display_view list="{{comment.noteAttaches}}" attachHeight="{{attach_height}}"></media_display_view>
   </view>
 
-  <view class="commentToComment" wx:if="{{comments.length > 0}}">
-  <comment_reply_cell comments="{{comments}}"></comment_reply_cell>
-  </view>
+  <navigator url="../community/comment_detail?commentID={{comment.id}}" hover-class="none">
+    <view class="commentToCommentBg" wx:if="{{comments.length > 0}}">
+      <view class="commentToComment">
+        <block wx:for="{{comments}}" wx:key="*this">
+          <comment_reply_cell item="{{item}}"></comment_reply_cell>
+        </block>
+      </view>
+    </view>
+  </navigator>
+
 
 
 </view>

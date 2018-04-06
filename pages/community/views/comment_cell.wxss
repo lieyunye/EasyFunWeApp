@@ -13,17 +13,17 @@
 }
 
 .avatar {
-  margin-left: 24rpx;
-  height: 70rpx;
-  width: 70rpx;
+  margin-left: 12px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%; 
 }
 
 .userInfo_right {
   display: flex;
-  width: 90%;/* 不知道为啥么要设置为90%，否则头像会被挤压 */
+  width: 85%;/* 不知道为啥么要设置为90%，否则头像会被挤压 */
   flex-direction: column;
-  margin-left: 20rpx; 
+  margin-left: 10px; 
     /* background-color: #f00fff; */
 }
 
@@ -69,7 +69,7 @@
 
 /* 评论文字 */
 .content {
-  margin-left: 110rpx;
+  margin-left: 57px;
   margin-top: 20rpx;
   margin-right: 20rpx;
   margin-bottom: 20rpx;
@@ -87,7 +87,7 @@
 .voice
 {
   background-color: #ffa82f; 
-  margin-left: 110rpx;
+  margin-left: 57px;
   width: 200rpx;
   height: 60rpx;
   border-radius:30rpx;
@@ -96,16 +96,14 @@
 /*附件播放器  */
 .attach {
   margin-top: 20rpx;
-  margin-left: 110rpx;
-  margin-right: 20rpx;
+  margin-left: 57px;
+  margin-right: 12px;
   background-color: #000000;
-
-
 }
 
-.commentToComment
+.commentToCommentBg
 {
-  margin-left: 110rpx;
+  margin-left: 57px;
   margin-top: 20rpx;
   margin-right: 20rpx;
   margin-bottom: 20rpx;
@@ -113,4 +111,12 @@
   display: flex;
   /* flex-direction: column; */
 
+}
+
+.commentToComment
+{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
 }
