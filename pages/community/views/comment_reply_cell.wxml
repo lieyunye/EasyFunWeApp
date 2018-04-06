@@ -1,0 +1,7 @@
+<view class="commentToComment">
+  <block wx:for="{{comments}}" wx:key="*this" >
+     <view class="commentToCommentText">
+     {{item}}
+    </view>  
+  </block> 
+  </view>

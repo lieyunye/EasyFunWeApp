@@ -1,0 +1,22 @@
+
+.commentToComment
+{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.commentToCommentText
+{
+  margin-top: 10rpx;
+  /* background-color: #ffa82f;  */
+  color: #999999;
+  font-size: 13px;
+   /* white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  */
+}

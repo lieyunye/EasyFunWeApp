@@ -20,6 +20,7 @@ Component({
           this.configVoice(newVal)
           this.attachHeight(newVal)
           this.configUpDown(newVal)
+          this.configComments(newVal)
 
         }
       }
@@ -49,8 +50,11 @@ Component({
     {
       type: Object,
       value: null
-    }
-
+    },
+    comments: {
+      type: Array,
+      value: []
+    },
 
   },
   methods: {
@@ -118,6 +122,54 @@ Component({
           break;
         }
       }
+    },
+    configComments:function(val){
+      var tempComments = []
+      var comments = val.comments
+
+      for (var i = 0, len = comments.length; i < len; i++) {
+        var item = comments[i]
+        console.log('sss' + item.content + len)
+
+        var nickString = ''
+        if (item.commentedUserDetail){
+          nickString = item.creatorDetail.userNick + ' 回复 ' + item.commentedUserDetail.userNick
+        } else {
+          nickString = item.creatorDetail.userNick
+        }
+        var contentString = ' :'
+        if (item.content.length > 0){
+          contentString = contentString + ' ' + item.content
+        }
+        var attachStr = ''
+        if (this.voiceData != null){
+          attachStr = ' [语音] '
+        }
+
+        for (var j = 0, len2 = item.noteAttaches.length; j < len2; j++) {
+          var item = item.noteAttaches[j]
+          var attachType = ''
+          if (item.fileType == 1){
+             attachType = ' [图片] '
+          } else if (item.fileType == 5){
+             attachType = ' [GIF] '
+          } else if(item.fileType == 2){
+             attachType = ' [视频] '
+          }
+          if (attachType.length > 0){
+             attachStr = attachStr + attachType
+          }
+        }
+        if (attachStr.length > 0) {
+          contentString = contentString + attachStr
+        }
+        var wholeReplyText = nickString + contentString
+        tempComments.push(wholeReplyText)
+      }
+      this.setData({
+        comments: tempComments
+      })
+
     }
   }
 

@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "media_display_view": "/pages/community/views/media_display_view",
+    "comment_reply_cell": "/pages/community/views/comment_reply_cell",
     "voice_button": "/pages/templates/voice_button"
   }
 }

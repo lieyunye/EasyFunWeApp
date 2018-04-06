@@ -1,10 +1,9 @@
 
-/* @import "../../templates/voice_button.wxss"; */
-
 .item {
-  margin-bottom: 20rpx;
+  margin-bottom: 60rpx;
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .userInfo {
@@ -71,6 +70,7 @@
 /* 评论文字 */
 .content {
   margin-left: 110rpx;
+  margin-top: 20rpx;
   margin-right: 20rpx;
   margin-bottom: 20rpx;
   /* background-color: #f00fff; */
@@ -95,10 +95,22 @@
 
 /*附件播放器  */
 .attach {
-  /* width: 100%; */
+  margin-top: 20rpx;
   margin-left: 110rpx;
   margin-right: 20rpx;
   background-color: #000000;
 
+
+}
+
+.commentToComment
+{
+  margin-left: 110rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #F7F7F7;
+  display: flex;
+  /* flex-direction: column; */
 
 }

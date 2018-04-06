@@ -5,7 +5,7 @@ var config = {
   // 下面的地址配合云端 Server 工作
   online_host,
 
-  getHotNoteList: `${online_host}/zone/notepub/getHotNoteList.htmls`,
+  getHotNoteList: `${dev_host}/zone/notepub/getHotNoteList.htmls`,
   getNewNoteList: `${dev_host}/zone/notepub/getNewNoteList.htmls`,
   getNoteByNoteId: `${dev_host}/zone/notepub/getNoteByNoteId.htmls`,
 
