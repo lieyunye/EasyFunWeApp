@@ -9,6 +9,13 @@
   </view>
 </template>
 
+<template name="gif">
+  <view class="containner">
+       <image class="blur_image"src="{{item.attachCover.url + '?x-oss-process=image/resize,m_fill,w_375,h_375/blur,r_24,s_20'}}" mode="aspectFill"></image>
+    <image class="image" src="{{item.url}}" mode="aspectFit" ></image>
+  </view>
+</template>
+
 <template name="video">
   <view class="containner">
      <image class="blur_image"src="{{item.attachCover.url + '?x-oss-process=image/resize,m_fill,w_375,h_375/blur,r_24,s_20'}}" mode="aspectFill"></image>
