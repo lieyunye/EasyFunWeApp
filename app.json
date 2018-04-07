@@ -14,16 +14,21 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "color": "#333333",
+    "selectedColor": "#333333",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
+               
+        "iconPath": "images/tab/tabbar_community.png",
+        "selectedIconPath": "images/tab/tabbar_community_selected.png",
         "pagePath": "pages/community/community",
         "text": "趣玩"
       },
       {
+"iconPath": "images/tab/tabbar_mine.png",
+"selectedIconPath": "images/tab/tabbar_mine_selected.png",
         "pagePath": "pages/index/index",
         "text": "我"
       }

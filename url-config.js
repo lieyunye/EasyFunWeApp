@@ -5,10 +5,10 @@ var config = {
   // 下面的地址配合云端 Server 工作
   online_host,
 
-  getHotNoteList: `${dev_host}/zone/notepub/getHotNoteList.htmls`,
-  getNewNoteList: `${dev_host}/zone/notepub/getNewNoteList.htmls`,
-  getNoteByNoteId: `${dev_host}/zone/notepub/getNoteByNoteId.htmls`,
-  getThreadByThreadId: `${dev_host}/zone/notepub/getThreadByThreadId.htmls`,
+  getHotNoteList: `${online_host}/zone/notepub/getHotNoteList.htmls`,
+  getNewNoteList: `${online_host}/zone/notepub/getNewNoteList.htmls`,
+  getNoteByNoteId: `${online_host}/zone/notepub/getNoteByNoteId.htmls`,
+  getThreadByThreadId: `${online_host}/zone/notepub/getThreadByThreadId.htmls`,
 
   // 测试的请求地址，用于测试会话
   requestUrl: `https://${online_host}/testRequest`,
